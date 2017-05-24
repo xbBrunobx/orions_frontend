@@ -2,14 +2,14 @@
 
 > [![Logo Orions](http://www.orions.com.br/img/logo_orions_sites3.png)](https://www.orions.com.br)
 >
-> Esse teste é somente para os candidatos que já passaram pela 1ª entrevista. Todos que os interessados que ainda não realizaram esta entrevista devem enviar um e-mail com o seu curriculum para contato@orions.com.br.
+> Esse teste é somente para os candidatos que já passaram pela 1ª entrevista. Todos os interessados que ainda não realizaram esta entrevista devem enviar um e-mail com o seu curriculum para contato@orions.com.br.
 
 ## Instruções:
 
 1. Faça um fork deste repositório;
 2. Implemente o HTML/CSS da tela com base no layout disponível;
-3. Preocupe-se em desenvolver o css utilizando mobile first;
-4. Utilize preferencialmente um Framework de JavaScript como Angularjs, React, Vuejs ou outros similares;
+3. Preocupe-se em desenvolver o css utilizando um framework de sua preferência e mobile first;
+4. Utilize um Framework de JavaScript como Angularjs, React, Vuejs ou outros similares;
 5. Utilize Task Runners (Gulp ou Grunt) ou Bundlers como o Webpack.
 6. Após terminar seu teste submeta um pull request e aguarde seu feedback.
 
@@ -54,7 +54,7 @@
 
 ## Material:
 
-* Todos os arquivos necessários estão disponíveis ma pasta [/arquivos](/arquivos)
+* Todos os arquivos necessários estão disponíveis na pasta [/arquivos](/arquivos)
 
 ## Submissão
 
