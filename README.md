@@ -2,18 +2,18 @@
 
 > [![Logo Orions](http://www.orions.com.br/img/logo_orions_sites3.png)](https://www.orions.com.br)
 >
-> Esse teste é somente para os candidatos que já passaram pela 1ª entrevista. Todos os interessados que ainda não realizaram esta entrevista devem enviar um e-mail com o seu curriculum para contato@orions.com.br.
+> Qualquer pessoa pode realizar o teste que daremos um feedback.
 
 ## Instruções:
 
 1. Faça um fork deste repositório;
-2. Implemente o HTML/CSS da tela com base no layout disponível;
-3. Preocupe-se em desenvolver o css utilizando um framework de sua preferência e mobile first;
+2. Implemente o HTML/CSS responsivo da tela com base no layout disponível;
+3. Preocupe-se em desenvolver o css utilizando um framework de sua preferência;
 4. Utilize um Framework de JavaScript como Angularjs, React, Vuejs ou outros similares;
 5. Utilize Task Runners (Gulp ou Grunt) ou Bundlers como o Webpack.
 6. Após terminar seu teste submeta um pull request e aguarde seu feedback.
 
-* **Importante:** O formulário de cadastro não deve fazer requisições para nenhuma url.
+* **Importante:** O formulário de Newsletter não deve fazer requisições para nenhuma url.
 * **Importante:** A url da página não pode ser recarregada em momento algum.
 
 ### Você pode:
@@ -30,7 +30,7 @@
 * Faça commit também dos arquivos não minificados;
 * Dê suporte a IE10+, Chrome, Safari e Firefox.
 
-* **Importante:** Você tem 24 horas para realizar a prova e leia o item submissão antes de começar a prova :-)
+* **Importante:** Leia o item submissão antes de começar a prova :-)
 
 ### Ganhe pontos extras por:
 
