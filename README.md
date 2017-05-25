@@ -29,6 +29,7 @@
 * Respeite os breakpoints definidos pelo design;
 * Faça commit também dos arquivos não minificados;
 * Dê suporte a IE10+, Chrome, Safari e Firefox.
+* Faça o máximo que conseguir ;)
 
 * **Importante:** Leia o item submissão antes de começar a prova :-)
 
@@ -66,7 +67,7 @@ Avaliaremos o resultado seguindo esses pontos:
 
 - Resultado funcional
 - Resultado visual
-- Manutenabilidade do código
+- Manutenibilidade do código
 - Clareza e limpeza do código
 - Semântica HTML
 - Lógica de programação
