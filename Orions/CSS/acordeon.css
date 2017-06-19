@@ -1,0 +1,668 @@
+/**
+  * Definir a largura e centraliza os itens da sanfona
+  */
+  .accordions{
+      width:100%;
+      position: absolute;
+      z-index: 150;
+  }
+  /**
+  * Oculta o input
+  */
+  .accordion-item input{display:none;}
+ 
+  /**
+  * Aqui o elemento que vai o conteúdo.
+  * Define o height:0, para aplicarmos o efeito
+  * colocamos overflow:hidden não mostrar o último item
+  * O transition o tipo de efeito que queremos
+  */
+  
+/*SANFONA 1*/
+@media (max-width:768px){
+.accordion-content{
+    width: 100%;
+    top:20px;
+    left: -152px;
+    height: 0px;
+    position: absolute;
+    background: #555555;
+    overflow: hidden;
+    z-index: 150;
+}
+.accordion-content h4{     
+    font-family: MyriadPro-Regular;
+    position: relative;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-top: 850px;
+    width: 300px;
+    top: -800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 200;
+}
+
+hr[id="hrinv"]{
+   
+    width: 88px;
+    height: 4px;
+    border-top:250px;
+    background: #fcba00;
+    position: relative;
+    display: block;
+    top: -885px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imghosp{
+    
+    width: 300px;
+    height: 223px;
+    top: -850px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.accordion-content .pa{
+    font-family: lato-light;
+    font-size: 13px;
+    color: #FFFFFF;
+    position: relative;
+    width: 70%;
+    
+    text-align: justify;
+    margin: 10px;
+    top: -800px;   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fechar{
+    
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    
+}
+ 
+
+[id^=accordion]:checked ~ .accordion-content {
+      height: 1000px;
+      position: relative;
+      right: 0;
+      z-index: 150;
+      left: 0;
+      top: 400px;
+  }
+}
+@media (min-width:769px){
+.accordion-content{
+width: 100%;
+ top:50px;
+      height: 0px;
+      position: absolute;
+      background: #555555;
+      overflow: hidden;
+      -webkit-transition: height 0.3s ease-in-out;
+      -moz-transition: height 0.3s ease-in-out;
+      -o-transition: height 0.3s ease-in-out;
+      -ms-transition: height 0.3s ease-in-out;
+      transition: height 0.3s ease-in-out;
+            z-index: 150;
+
+}
+.accordion-content h4{     
+    font-family: MyriadPro-Regular;
+    position: absolute;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-top: 850px;
+    width: 300px;
+    top: -800px;
+    left: 100px;
+    z-index: 200;
+}
+
+hr[id="hrinv"]{
+   
+    width: 88px;
+    height: 4px;
+    border-top:250px;
+    background: #fcba00;
+    position: absolute;
+    left: 170px;
+}
+.imghosp{
+    
+    width: 300px;
+    height: 223px;
+    top: 150px;
+    position: absolute;
+    left:135px;
+    
+}
+
+#fechar{
+    
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    
+}
+.accordion-content .pa{
+    font-family: lato-light;
+    font-size: 13px;
+    color: #FFFFFF;
+    position: relative;
+    width: 40%;
+    left: 550px;
+    text-align: justify;
+    margin: 10px;
+    top: 50px;   
+}
+[id^=accordion]:checked ~ .accordion-content {
+      height: 500px;
+      position: relative;
+      right: 0;
+      z-index: 150;
+      left: 0;
+      top: 400px;
+  }
+}
+/*SANFONA 2*/
+@media (max-width:768px){
+.accordion-content2{
+    width: 100%;
+    top:20px;
+    left: -152px;
+    height: 0px;
+    position: absolute;
+    background: #555555;
+    overflow: hidden;   
+    z-index: 150;
+}
+.accordion-content2 h4{     
+    font-family: MyriadPro-Regular;
+    position: relative;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-top: 850px;
+    width: 300px;
+    top: -800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 200;
+}
+
+hr[id="hrinv"]{
+   
+    width: 88px;
+    height: 4px;
+    border-top:250px;
+    background: #fcba00;
+    position: relative;
+    display: block;
+    top: -885px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imghosp{
+    
+    width: 300px;
+    height: 223px;
+    top: -850px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.accordion-content2 .pa{
+    font-family: lato-light;
+    font-size: 13px;
+    color: #FFFFFF;
+    position: relative;
+    width: 70%;
+    
+    text-align: justify;
+    margin: 10px;
+    top: -800px;   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fechar{
+    
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    
+}
+ 
+
+[id^=accordion]:checked ~ .accordion-content2 {
+      height: 1000px;
+      position: relative;
+      right: 0;
+      z-index: 150;
+      left: 0;
+      top: 659px;
+  }
+}
+@media (min-width:769px){
+.accordion-content2{
+width: 100%;
+ top:50px;
+      height: 0px;
+      position: absolute;
+      background: #555555;
+      overflow: hidden;
+      -webkit-transition: height 0.3s ease-in-out;
+      -moz-transition: height 0.3s ease-in-out;
+      -o-transition: height 0.3s ease-in-out;
+      -ms-transition: height 0.3s ease-in-out;
+      transition: height 0.3s ease-in-out;
+            z-index: 150;
+
+}
+.accordion-content2 h4{     
+    font-family: MyriadPro-Regular;
+    position: absolute;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-top: 850px;
+    width: 300px;
+    top: -800px;
+    left: 100px;
+    z-index: 200;
+}
+
+hr[id="hrinv"]{
+   
+    width: 88px;
+    height: 4px;
+    border-top:250px;
+    background: #fcba00;
+    position: absolute;
+    left: 170px;
+}
+.imghosp{
+    
+    width: 300px;
+    height: 223px;
+    top: 150px;
+    position: absolute;
+    left:135px;
+    
+}
+
+#fechar{
+    
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    
+}
+.accordion-content2 .pa{
+    font-family: lato-light;
+    font-size: 13px;
+    color: #FFFFFF;
+    position: relative;
+    width: 40%;
+    left: 550px;
+    text-align: justify;
+    margin: 10px;
+    top: 50px;   
+}
+[id^=accordion]:checked ~ .accordion-content2 {
+      height: 500px;
+      position: relative;
+      right: 0;
+      z-index: 150;
+      left: 0;
+      top: 400px;
+  }
+}
+/*SANFONA 3*/
+
+@media (max-width:768px){
+.accordion-content3{
+    width: 100%;
+    top:20px;
+    left: -152px;
+    height: 0px;
+    position: absolute;
+    background: #555555;
+    overflow: hidden;   
+    z-index: 150;
+}
+.accordion-content3 h4{     
+    font-family: MyriadPro-Regular;
+    position: relative;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-top: 850px;
+    width: 300px;
+    top: -800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 200;
+}
+
+hr[id="hrinv"]{
+   
+    width: 88px;
+    height: 4px;
+    border-top:250px;
+    background: #fcba00;
+    position: relative;
+    display: block;
+    top: -885px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imghosp{
+    
+    width: 300px;
+    height: 223px;
+    top: -850px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.accordion-content3 .pa{
+    font-family: lato-light;
+    font-size: 13px;
+    color: #FFFFFF;
+    position: relative;
+    width: 70%;
+    
+    text-align: justify;
+    margin: 10px;
+    top: -800px;   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fechar{
+    
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    
+}
+ 
+
+[id^=accordion]:checked ~ .accordion-content3 {
+      height: 1000px;
+      position: relative;
+      right: 0;
+      z-index: 150;
+      left: 0;
+      top: 917px;
+  }
+}
+@media (min-width:769px){
+.accordion-content3{
+width: 100%;
+ top:50px;
+      height: 0px;
+      position: absolute;
+      background: #555555;
+      overflow: hidden;
+      -webkit-transition: height 0.3s ease-in-out;
+      -moz-transition: height 0.3s ease-in-out;
+      -o-transition: height 0.3s ease-in-out;
+      -ms-transition: height 0.3s ease-in-out;
+      transition: height 0.3s ease-in-out;
+            z-index: 150;
+
+}
+.accordion-content3 h4{     
+    font-family: MyriadPro-Regular;
+    position: absolute;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-top: 850px;
+    width: 300px;
+    top: -800px;
+    left: 100px;
+    z-index: 200;
+}
+
+hr[id="hrinv"]{
+   
+    width: 88px;
+    height: 4px;
+    border-top:250px;
+    background: #fcba00;
+    position: absolute;
+    left: 170px;
+}
+.imghosp{
+    
+    width: 300px;
+    height: 223px;
+    top: 150px;
+    position: absolute;
+    left:135px;
+    
+}
+
+#fechar{
+    
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    
+}
+.accordion-content3 .pa{
+    font-family: lato-light;
+    font-size: 13px;
+    color: #FFFFFF;
+    position: relative;
+    width: 40%;
+    left: 550px;
+    text-align: justify;
+    margin: 10px;
+    top: 50px;   
+}
+[id^=accordion]:checked ~ .accordion-content3 {
+      height: 500px;
+      position: relative;
+      right: 0;
+      z-index: 150;
+      left: 0;
+      top: 400px;
+  }
+}
+/*SANFONA 4*/
+@media (max-width:768px){
+.accordion-content4{
+width: 100%;
+ top:20px;
+ left: -152px;
+      height: 0px;
+      position: absolute;
+      background: #555555;
+      overflow: hidden;
+      
+  z-index: 150;
+}
+.accordion-content4 h4{     
+    font-family: MyriadPro-Regular;
+    position: relative;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-top: 850px;
+    width: 300px;
+    top: -800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 200;
+}
+
+hr[id="hrinv"]{
+   
+    width: 88px;
+    height: 4px;
+    border-top:250px;
+    background: #fcba00;
+    position: relative;
+    display: block;
+    top: -885px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imghosp{
+    
+    width: 300px;
+    height: 223px;
+    top: -850px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.accordion-content4 .pa{
+    font-family: lato-light;
+    font-size: 13px;
+    color: #FFFFFF;
+    position: relative;
+    width: 70%;
+    
+    text-align: justify;
+    margin: 10px;
+    top: -800px;   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fechar{
+    
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    
+}
+ 
+
+[id^=accordion]:checked ~ .accordion-content4 {
+      height: 1000px;
+      position: relative;
+      right: 0;
+      z-index: 150;
+      left: 0;
+      top: 1175px;
+  }
+}
+@media (min-width:769px){
+.accordion-content4{
+width: 100%;
+ top:50px;
+      height: 0px;
+      position: absolute;
+      background: #555555;
+      overflow: hidden;
+      -webkit-transition: height 0.3s ease-in-out;
+      -moz-transition: height 0.3s ease-in-out;
+      -o-transition: height 0.3s ease-in-out;
+      -ms-transition: height 0.3s ease-in-out;
+      transition: height 0.3s ease-in-out;
+            z-index: 150;
+
+}
+.accordion-content4 h4{     
+    font-family: MyriadPro-Regular;
+    position: absolute;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-top: 850px;
+    width: 300px;
+    top: -800px;
+    left: 100px;
+    z-index: 200;
+}
+
+hr[id="hrinv"]{
+   
+    width: 88px;
+    height: 4px;
+    border-top:250px;
+    background: #fcba00;
+    position: absolute;
+    left: 170px;
+}
+.imghosp{
+    
+    width: 300px;
+    height: 223px;
+    top: 150px;
+    position: absolute;
+    left:135px;
+    
+}
+
+#fechar{
+    
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    
+}
+.accordion-content4 .pa{
+    font-family: lato-light;
+    font-size: 13px;
+    color: #FFFFFF;
+    position: relative;
+    width: 40%;
+    left: 550px;
+    text-align: justify;
+    margin: 10px;
+    top: 50px;   
+}
+[id^=accordion]:checked ~ .accordion-content4 {
+      height: 500px;
+      position: relative;
+      right: 0;
+      z-index: 150;
+      left: 0;
+      top: 400px;
+  }
+}
+
+  /**
+  * Selecionar o elemento que está precedente
+  * do tipo com atributo checked, sendo
+  * que o ID comece o accordion
+  * E dentro dele, definimos a altura,
+  * mostrando o conteúdo
+  */
+  
+

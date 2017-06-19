@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/06/2017, 13:00:32
+    Author     : brunocampos
+*/
+@media(max-width:768px){
+#p h2{
+    font-family: MyriadPro-Regular;
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    color: #111111;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 300px;
+}
+#p hr{
+    width: 88px;
+    height: 4px;
+    top: -40px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textqs{
+    font-family: lato-regular;
+    font-size: 19px;
+    color: #444444;
+    width: 70%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+#roda{
+    position: relative;
+    top:50px;
+}
+#tqs{
+    height: 3700px;
+    
+    position: relative;
+}
+}
+@media(min-width:769px){
+#p h2{
+    font-family: MyriadPro-Regular;
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    color: #111111;
+    left: 177px;
+    width: 300px;
+}
+#p hr{
+    width: 88px;
+    height: 4px;
+    top: -40px;
+    position: relative;
+    left: -375px;
+}
+
+.textqs{
+    font-family: lato-regular;
+    font-size: 19px;
+    color: #444444;
+    width: 70%;
+    position: relative;
+    left: 177px;
+    text-align: justify;
+}
+#roda{
+    margin-top: 50px;
+}
+#tqs{
+    height: 1600px;
+    position: relative;
+}
+}

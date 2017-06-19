@@ -1,0 +1,632 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/06/2017, 12:05:05
+    Author     : brunocampos
+*/
+
+body{
+   max-width:100%;
+   position: relative;
+}
+/*topo do site*/
+#topo{
+    background: #111111;
+    height: 130px;
+}
+/*lopo do site*/
+#logo{
+    height: 84px;
+    width: 274px;
+    padding: 20px 0px 20px 40px;
+}
+/*menu do site*/
+.men{
+    text-decoration: none;
+}
+.men:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+/*menu ativo*/
+#at{
+    color: #ffffff;
+}
+/*menu inativo*/
+#in{
+    color: #fcba00;
+}
+/*botao menu responsivo*/
+label[for="bt_menu"]{
+    background: #111111;
+    border: 1px solid #fcba00;
+    color:#fcba00;
+    font-family: arial;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: absolute;
+    top:55px;
+    right:5px;
+}
+/*botao menu oculto em telas grandes*/
+#bt_menu{
+    display: none;
+}
+
+@media(max-width:768px){
+    /*menu em telas pequenas*/
+    #menu{
+        width: 100%;
+        float: none;
+        background: #111111;
+        text-align: center;
+        display: block;
+        font-family: MyriadPro-Regular;
+        font-size: 18px;
+        margin-left: -100%;
+        transition: all.4s;
+        position: absolute;
+        top:110px;
+        z-index: 5;
+    }
+    #menu ul li{
+        list-style: none;
+    }
+    /*botao menu responsivo aparece*/
+    label[for="bt_menu"]{
+        display: block;
+    }
+    #bt_menu:checked ~ #menu{
+        margin-left:0;
+    }
+}
+@media(min-width:769px){
+     /*menu */
+    #menu{
+    margin-left: 550px;
+}
+    #menu ul {
+    margin-top: -70px;
+    padding:0px;
+    background-color:#EDEDED;
+    color: white;
+    list-style:none;
+    font-family: MyriadPro-Regular;
+    font-size: 18px;
+}
+    #menu ul li { 
+    display: block;
+    float: left;
+    padding: 30px;
+}
+}
+/*parte1 do site*/
+#p1{
+    background: #fcba00;
+    top:-20px;
+    width: 100%;
+    height: 340px;
+    position: relative;
+    z-index: 4;
+}
+#p1 h1{
+    font-family: lato-regular;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    top: 20px;
+    color: #4B4B4B;
+    position: relative;
+    
+}
+@media(max-width:768px){
+    /*parte2 do site telas pequenas*/
+    #p2{
+        background: #f2f2f2;
+        top:450px;
+        width: 100%;
+        height: 1200px;
+        position: absolute;
+    }
+}
+@media(min-width:769px){
+    /*parte 2 do site*/
+    #p2{
+    background: #f2f2f2;
+    top:450px;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+}
+}
+#p2 h2{
+    font-family: MyriadPro-Regular;
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    color: #111111;
+    text-align: center;
+    margin-top: 120px;
+}
+#p2 hr{
+    width: 88px;
+    height: 4px;
+    top: -10px;
+    position: relative;
+}
+@media(max-width:768px){
+    /*serviço 1 tela pequena*/
+    #ser1{
+        height: 208px;
+        width: 208px;
+        color: #E3C54A;
+        border: 1px solid #BBBBBB;
+        background: #FFFFFF;
+        border-radius: 500px;
+        position: relative;
+        top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    
+}
+}
+@media(min-width:769px){
+    /*serviço 1*/
+    #ser1{
+        height: 208px;
+        width: 208px;
+        color: #E3C54A;
+        border: 1px solid #BBBBBB;
+        background: #FFFFFF;
+        border-radius: 500px;
+        position: absolute;
+        top: 200px;
+        left: 150px;
+    
+    }
+}
+#ser1 h3{
+    font-family: lato-regular;
+    font-size: 18px;
+    position: relative;
+    font-weight: bold;
+    color: #111111;
+    margin-top: 10px;
+}
+#ser1 p[id="pser1"]{
+    font-family: lato-light;
+    font-size: 14px;
+    color: #111111;
+    margin: 0px;
+}
+/*icones dos servicos*/
+.icon{
+    height: 56px;
+    width: 56px;
+    top: -27px;
+    position: relative;
+    border-radius: 360px;
+    color: #E3C54A;
+    background: #222222;
+}
+/*botao + dos serviços*/
+.plus{
+    height: 36px;
+    width: 36px;
+    top: 10px;
+    position: relative;
+    color: #FFFFFF;
+    background: #fcba00;
+    border-radius: 360px;
+}
+.plus:hover{
+    background: #000000;
+}
+
+@media(max-width:768px){
+    /*serviço 2 tela pequena*/  
+    #ser2{
+        height: 208px;
+        width: 208px;
+        color: #E3C54A;
+        border: 1px solid #BBBBBB;
+        background: #FFFFFF;
+        border-radius: 500px;
+        position: relative;
+        top: 70px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 0;
+    }
+}
+@media only screen
+and (min-width : 769px) {
+    /*serviço 2*/
+    #ser2{
+        height: 208px;
+        width: 208px;
+        color: #E3C54A;
+        border: 1px solid #BBBBBB;
+        background: #FFFFFF;
+        border-radius: 500px;
+        position: absolute;
+        top: 200px;
+        left: 400px;
+        z-index: 0;
+    
+    }
+}
+
+#ser2 h3{
+    font-family: lato-regular;
+    font-size: 18px;
+    font-weight: bold;
+    color: #111111;
+    margin-top: 10px;
+}
+#ser2 p{
+    font-family: lato-light;
+    font-size: 14px;
+    color: #111111;
+    margin: 0px;
+}
+
+
+@media(max-width:768px){ 
+    /*serviço 3 tela pequena*/
+    #ser3{
+        height: 208px;
+        width: 208px;
+        color: #E3C54A;
+        border: 1px solid #BBBBBB;
+        background: #FFFFFF;
+        border-radius: 500px;
+        position: relative;
+        top: 120px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 10;
+    }
+}
+@media(min-width:769px){  
+    /*serviço 3*/
+    #ser3{
+        height: 208px;
+        width: 208px;
+        color: #E3C54A;
+        border: 1px solid #BBBBBB;
+        background: #FFFFFF;
+        border-radius: 500px;
+        position: absolute;
+        top: 200px;
+        left: 650px;
+       
+    }
+}
+#ser3 h3{
+    font-family: lato-regular;
+    font-size: 18px;
+    font-weight: bold;
+    color: #111111;
+    margin-top: 10px;
+}
+#ser3 p{
+    font-family: lato-light;
+    font-size: 14px;
+    color: #111111;
+    margin: 0px;
+}
+
+@media(max-width:768px){ 
+    /*serviço 4 tela pequena*/
+    #ser4{
+        height: 208px;
+        width: 208px;
+        color: #E3C54A;
+        border: 1px solid #BBBBBB;
+        background: #FFFFFF;
+        border-radius: 500px;
+        position: relative;
+        top: 170px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 10;
+    
+    }
+}
+@media(min-width:769px){ 
+    /*serviço 4*/
+    #ser4{
+        height: 208px;
+        width: 208px;
+        color: #E3C54A;
+        border: 1px solid #BBBBBB;
+        background: #FFFFFF;
+        border-radius: 500px;
+        position: absolute;
+        top: 200px;
+        left: 900px;
+    
+    }
+}
+
+#ser4 h3{
+    font-family: lato-regular;
+    font-size: 18px;
+    font-weight: bold;
+    color: #111111;
+    margin-top: 10px;
+}
+#ser4 p{
+    font-family: lato-light;
+    font-size: 14px;
+    color: #111111;
+    margin: 0px;
+}
+@media(max-width:768px){
+    /*parte 3 do site tela pequena*/
+    #p3{
+        height: 1050px;
+        position: relative;
+        z-index: 0;
+    }
+    
+}
+@media(max-width:768px){
+    /*parte 3 do site tela pequena*/
+    #p3 h2{
+        font-family: MyriadPro-Regular;
+        position: relative;
+        font-weight: bold;
+        font-size: 25px;
+        color: #111111;
+        margin-top: 850px;
+        width: 300px;
+        top: 370px;
+        margin-left: auto;
+        margin-left: auto;
+    }
+    #p3 hr{
+        width: 88px;
+        height: 4px;
+        top: 340px;
+        position: relative;
+        margin: auto;
+        display: block;
+    
+    }
+    .news1{
+        font-family: lato-regular;
+        font-size: 19px;
+        font-weight: bold;
+        color: #111111;
+        top:370px;
+        position: relative;
+        margin-top:-20px; 
+        width: 300px;
+        margin-left: auto;
+        margin-left: auto;
+    }
+    .news1 span{
+        color: #fcba00;
+        top:0px;
+    }
+    .news2{
+        font-family: lato-light;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 15px;
+        color: #444444;
+        position: relative;
+        margin-top: -20px;
+        width: 300px;
+        top:350px;
+        margin-left: auto;
+        margin-left: auto;
+}
+}
+@media(min-width:769px){
+    /*parte 3 do site*/
+    #p3{
+        height: 500px;
+        position: relative;
+        top:-200px;
+    }
+    #p3 h2{
+        font-family: MyriadPro-Regular;
+        position: relative;
+        font-weight: bold;
+        font-size: 25px;
+        color: #111111;
+        margin-top: 850px;
+        left: 177px;
+        width: 300px;
+    }
+    #p3 hr[id="hrs"]{
+        width: 88px;
+        height: 4px;
+        top: -40px;
+        position: relative;
+        left: 220px;
+}
+    .news1{
+        left: 177px;
+        font-family: lato-regular;
+        font-size: 19px;
+        font-weight: bold;
+        color: #111111;
+        position: relative;
+        margin-top:-20px; 
+        width: 300px;
+    }
+    .news1 span{
+        color: #fcba00;
+        top:0px;
+    }
+    .news2{
+        left: 177px;
+        font-family: lato-light;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 15px;
+        color: #444444;
+        position: relative;
+        margin-top: -20px;
+        width: 300px;
+    }
+}
+
+@media(max-width:768px){
+    /*formulario tela pequena*/
+    .inputstxt{
+        top:340px;
+        padding: 5px;
+        width: 300px;
+        margin-top: -5px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+   
+}
+    #inputres{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .inputstel{
+        top:340px;
+        padding: 5px;
+        width: 300px;
+        position: relative;
+        margin-top: -5px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #button{
+        background: #fcba00;
+        border: 1px solid #fcba00;
+        color: white;
+        padding: 6px;
+        width: 100px;
+        position: relative;
+        top:340px;
+        margin: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    
+}
+    #button:hover{
+        background: #ffc822;
+    }
+}
+@media(min-width:769px){
+    /*formulario*/
+    .inputstxt{
+        top:-230px;
+        left: 650px;
+        padding: 5px;
+        margin: 10px;
+        width: 300px;
+        position: relative;
+    }
+    .inputstel{
+        top:-230px;
+        left: 650px;
+        padding: 5px;
+        margin: 10px;
+        width: 160px;
+        position: relative;
+    }
+    #button{
+        background: #fcba00;
+        border: 1px solid #fcba00;
+        color: white;
+        padding: 6px;
+        margin: 10px;
+        width: 100px;
+        position: relative;
+        top:-230px;
+        left: 650px;
+    
+    }
+    #button:hover{
+        background: #ffc822;
+    }
+}
+/*rodape*/
+#roda{
+    background: #111111;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    bottom: 0;
+    margin-top: -100px;
+    height: 200px;
+    
+}
+/*logo rodape*/
+#logoroda{
+    margin-top: 0px;
+    width: 190px;
+    height: 61px;
+}
+#roda h3{
+    font-family: lato-regular;
+    font-size: 14px;
+    color: #727272;
+    margin-top: 10px;
+}
+/*redes sociais*/
+.rs{
+    height: 32px;
+    width: 32px;
+    background: #fcba00;
+    margin: 5px;
+    
+}
+.rs:hover{
+    background: #ffc822;
+}
+@media(max-width:768px){
+    /*botao subir ao topo tela pequena*/
+    #stopo{
+        width: 49px;
+        height: 49px;
+        border-radius: 360px;
+        color:#FFFFFF;
+        background: #fcba00;
+        right: 15px;
+        top: -24px;
+        position: absolute;
+    }
+}
+@media(min-width:769px){
+    /*botao subir ao topo*/
+    #stopo{
+        width: 49px;
+        height: 49px;
+        border-radius: 360px;
+        color:#FFFFFF;
+        background: #fcba00;
+        left: 1150px;
+        top: -24px;
+        position: relative;
+    }
+}
+#stopo:hover{
+    background: #ffc822;
+}
